@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      div {
+        display: flex;
+        margin-left: 80%;
+        margin-right: 80%;
+      }
+      h4 {
+        display: flex;
+        width: 100px;
+        justify-content: center;
+      }
+      h1 {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Press if you are gay</h1>
+    <div>
+      <button onclick="button()"><h4>Have Fun!!!</h4></button>
+    </div>
+    <script>
+      const doc = document;
+      let body = doc.querySelector("body");
+      function button() {
+        let red = Math.floor(Math.random() * 256);
+        let blue = Math.floor(Math.random() * 256);
+        let green = Math.floor(Math.random() * 256);
+        let RGBColor = "rgb(" + red + "," + blue + "," + green + ")";
+        body.style.backgroundColor = RGBColor;
+      }
+    </script>
+  </body>
+</html>
